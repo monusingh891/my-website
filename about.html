@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>About Page</h1>
-  <p>Yeh mera About page hai. Yahan main apne baare me info dalunga.</p>
-  <a href="index.html">Back to Home</a>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Mera Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About - My Advanced Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<body class="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 min-h-screen flex flex-col text-white">
+
+  <!-- Header -->
+  <header class="bg-black bg-opacity-60 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <h1 class="text-2xl font-bold">About Me</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="about.html" class="hover:text-yellow-400">About</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Mere Baare Me</h2>
-      <p>👋 monu singh thakur MST store ka owner hu agar apko kisi tarah ki complaint he to ap call kar ke apna feedback de sakte hei 🚀.</p>
-    </section>
+  <!-- About Section -->
+  <main class="flex-grow flex items-center justify-center px-6">
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-10 rounded-2xl shadow-xl text-center max-w-2xl">
+      <h2 class="text-4xl font-extrabold mb-6">👋 Namaste!</h2>
+      <p class="text-lg leading-relaxed">
+        MST STORE Ham apki kya help kar sakte hei
+         <span class="text-yellow-300">TailwindCSS</span> se banayi hai.  
+        Mujhe coding aur web development kaafi pasand hai 🚀.  
+      </p>
+      <p class="mt-4">Yaha main apne projects, ideas aur naye experiments share karunga.</p>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 My Website | All Rights Reserved</p>
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>© 2025 My Advanced Website | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>

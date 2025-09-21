@@ -1,58 +1,55 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Contact Page</h1>
-  <p>Aap mujhe email bhej sakte ho: <b>yourname@gmail.com</b></p>
-  <a href="index.html">Back to Home</a>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Mera Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact - My Advanced Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<body class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 min-h-screen flex flex-col text-white">
+
+  <!-- Header -->
+  <header class="bg-black bg-opacity-60 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <h1 class="text-2xl font-bold">Contact Me</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Get in Touch</h2>
-      <p>Aap mujhse yaha contact kar sakte ho:</p>
+  <!-- Contact Section -->
+  <main class="flex-grow flex items-center justify-center px-6">
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-10 rounded-2xl shadow-xl text-center max-w-xl">
+      <h2 class="text-3xl font-extrabold mb-6">📩 Get in Touch</h2>
 
-      <ul style="list-style:none; padding:0; font-size:18px;">
-        <li>📞 Mobile: <b>[9691759358]</b></li>
-        <li>📧 Email: <b>[monusinghthakur891@gmail.com]</b></li>
-        <li>📍 Address: <b>[nai basti subhash nagar jhanda chowk]</b></li>
+      <ul class="mb-8 text-lg">
+        <li>📞 Mobile: <b>[MST STORE]</b></li>
+        <li>📧 Email: <b>[sonusinghthakur47458@gmail.com]</b></li>
+        <li>📍 Address: <b>[Near Hanuman Mandir Gram Jhurjhuru Panagar]</b></li>
       </ul>
 
-      <h3>Ya phir form bhar do 👇</h3>
-      <form action="https://formspree.io/f/mwpeqwjy" method="POST" style="margin-top:20px;">
-        <input type="text" name="name" placeholder="Your Name" required><br><br>
-        <input type="email" name="email" placeholder="Your Email" required><br><br>
-        <textarea name="message" placeholder="Your Message" required></textarea><br><br>
-        <button type="submit">Send Message</button>
+      <form action="https://formspree.io/f/mwpeqwjy" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required 
+               class="w-full p-3 rounded-lg text-black">
+        <input type="email" name="email" placeholder="Your Email" required 
+               class="w-full p-3 rounded-lg text-black">
+        <textarea name="message" placeholder="Your Message" required 
+                  class="w-full p-3 rounded-lg text-black"></textarea>
+        <button type="submit" 
+                class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow-lg transition">
+          Send Message
+        </button>
       </form>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 My Website | All Rights Reserved</p>
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>© 2025 My Advanced Website | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
-

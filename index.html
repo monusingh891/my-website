@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mera Pehla Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Welcome to My Website</h1>
-  <p>Yeh meri pehli website hai jo maine khud banayi.</p>
-  <button onclick="sayHello()">Click Me</button>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mera Pehla Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Mera Advanced Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>🌐 Welcome to My Website</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-black bg-opacity-60 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <h1 class="text-2xl font-bold">🌐 My Advanced Website</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="about.html" class="hover:text-yellow-400">About</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Yeh meri pehli website hai jo maine khud banayi! 🎉</h2>
-      <p>GitHub Pages se free hosting par live chal rahi hai.</p>
-      <button onclick="sayHello()">Click Me</button>
-    </section>
+  <!-- Hero Section -->
+  <main class="flex-grow flex items-center justify-center text-center text-white px-6">
+    <div>
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-6 animate-bounce">🚀 Welcome to My Website</h2>
+      <p class="text-lg md:text-2xl mb-6">Ab ye ekdum stylish aur responsive design hai jo har device pe mast chalega.</p>
+      <a href="about.html" class="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow-lg transition">Know More</a>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 My Website | All Rights Reserved</p>
+  <!-- Features Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 shadow-lg rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">⚡ Fast</h3>
+        <p>Website TailwindCSS se banayi gayi hai jo responsive aur fast hai.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">📱 Responsive</h3>
+        <p>Mobile, Tablet aur Desktop sab pe perfect layout dikhega.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-bold mb-3">🎨 Stylish</h3>
+        <p>Gradient backgrounds, hover effects aur modern design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>© 2025 My Advanced Website | All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
-
